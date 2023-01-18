@@ -1,6 +1,8 @@
 go 1.19
 
 use (
-    "./01 - package-test"
+	"./01 - package-test"
 	"./02 - classes-exception-handling"
+	"./03 - goroutines-simple"
+	"./04 - goroutines-wait-group"
 )
