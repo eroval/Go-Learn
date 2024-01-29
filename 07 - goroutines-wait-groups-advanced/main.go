@@ -32,9 +32,9 @@ func (c* Number) Print(){
 	fmt.Printf("x: %v\ny: %v\n", c.x, c.y)
 }
 
-func (c* Number) AddSimultaneously(x int, y int){
+func (c* Number) AddSimultaneously(x int, y int, number_of_times int){
 	wg := sync.WaitGroup{}
-	for i:=0; i<100; i++{
+	for i:=0; i<number_of_times; i++{
 		wg.Add(1)
 		go func(){
 			c.AddX(x)
@@ -57,6 +57,6 @@ func main(){
 	number:=NewNumber(5,5)
 	number.AddX(5)
 	number.Print()
-	number.AddSimultaneously(5, 10)
+	number.AddSimultaneously(5, 10, 100)
 	number.Print()
 }
