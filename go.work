@@ -7,4 +7,5 @@ use (
 	"./04 - goroutines-wait-group"
 	"./05 - goroutines-read-write"
 	"./06 - goroutines-read-write-lock"
+	"./07 - goroutines-wait-groups-advanced"
 )
