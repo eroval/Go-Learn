@@ -37,8 +37,8 @@ func (c* Number) AddSimultaneously(x int, y int, number_of_times int){
 	for i:=0; i<number_of_times; i++{
 		wg.Add(1)
 		go func(){
-			c.AddX(x)
 			defer wg.Done()
+			c.AddX(x)
 		}()
 
 		wg.Add(1)
