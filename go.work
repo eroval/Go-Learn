@@ -8,4 +8,6 @@ use (
 	"./05 - goroutines-read-write"
 	"./06 - goroutines-read-write-lock"
 	"./07 - goroutines-wait-groups-advanced"
+	"./08 - goroutines-buffered-channel-wait-groups"
+	"./09 - goroutines-weighted-semaphore-wait-groups"
 )
